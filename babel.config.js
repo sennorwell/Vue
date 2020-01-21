@@ -5,5 +5,5 @@ module.exports = {
         'es.symbol' // https://github.com/zloirock/core-js
       ]
     }]
-  ],
+  ]
 };
