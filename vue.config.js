@@ -1,3 +1,3 @@
 module.exports = {
-  console.log(2)
+  let name = 1
 };
