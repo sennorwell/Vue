@@ -11,18 +11,20 @@ module.exports = {
     browser: true
   },
   'extends': [
-    `plugin:vue/essential`,
-    `eslint:recommended`
+    'plugin:vue/essential',
+    'eslint:recommended'
   ],
   rules: {
-    'no-console': process.env.NODE_ENV === `production` ? `error` : `off`,
-    'no-debugger': process.env.NODE_ENV === `production` ? `error` : `off`,
-    'quotes': [1,`backtick`], // 引号约定
-    'camelcase': [1,{properties: `always`}], // 骆驼拼写法命名约定
+    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'quotes': [1,'single'], // 引号约定
+    'camelcase': [1,{properties: 'always'}], // 骆驼拼写法命名约定
+    'semi-style': ['error', 'last'], // 强制分号的位置
+    'semi': [1,'always'],// 要求或禁止使用分号代替 ASI
   },
   parserOptions: {
-    parser: `babel-eslint`,
+    parser: 'babel-eslint',
     ecmaVersion: 2018,
-    sourceType: `module`
+    sourceType: 'module'
   }
-}
+};

@@ -3,12 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve --open",
-    "build": "vue-cli-service build --modern",
+    "serve": "vue-cli-service serve",
+    "build:prod": "vue-cli-service build --modern",
     "lint": "vue-cli-service lint",
     "inspect": "vue-cli-service inspect > output.js --plugins"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.8.3",
     "core-js": "^3.4.4",
     "vue": "^2.6.10",
     "vue-router": "^3.1.3",
