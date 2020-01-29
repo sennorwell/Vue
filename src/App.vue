@@ -8,6 +8,15 @@
   </div>
 </template>
 
+<script>
+export default {
+  name: 'app',
+  mounted(){
+    console.log(process.env);
+  }
+};
+</script>
+
 <style lang="scss">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;

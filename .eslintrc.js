@@ -16,7 +16,7 @@ module.exports = {
     // 'vue'
   ],
   rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-console': process.env.NODE_ENV === 'production' ? 'off' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'quotes': [1, 'single'], // 引号约定
     'camelcase': [1, { properties: 'always' }], // 骆驼拼写法命名约定
