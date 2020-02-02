@@ -10,7 +10,7 @@
     "build:dev": "vue-cli-service build --modern --mode development",
     "build:test": "vue-cli-service build --modern --mode test",
     "lint": "vue-cli-service lint",
-    "inspect": "vue-cli-service inspect > output.js --plugins"
+    "inspect": "vue-cli-service inspect > output.js"
   },
   "dependencies": {
     "@babel/polyfill": "^7.8.3",
@@ -31,7 +31,9 @@
     "eslint-plugin-vue": "^5.2.3",
     "node-sass": "^4.12.0",
     "sass-loader": "^8.0.0",
-    "vue-template-compiler": "^2.6.10"
+    "vue-template-compiler": "^2.6.10",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
